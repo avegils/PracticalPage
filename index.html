@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Practical Application</title>
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap"
+          rel="stylesheet"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+          crossorigin="anonymous"
+        ></script>
+        <script src="enabler.js" defer></script>
+        <style>
+            .button-container .btn {
+                width: 500px;
+                text-align: center;
+                margin-top: 200px;
+                margin-left: 200px;
+            }
+            .button-container form {
+              margin-top: 100px;
+              text-align: center;
+            }
+            body {
+              background-color: antiquewhite;
+            }
+            .button-container {
+              width: 600px;
+            }
+            .container-fluid {
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              text-align: center;
+              background-color: antiquewhite;
+            }
+            .card {
+              font-family: 'Times New Roman', Times, serif;
+            }
+            .card img {
+              width: 100%;
+              height: 150px;
+              display: flex;
+              flex-wrap: wrap;
+            }
+            .carousel-area {
+              width: 100%;
+              background-color: antiquewhite;
+            }
+            .accordion-area {
+              width: 600px;
+              margin: 30px;
+            }
+        </style>
+      </head>
+<body>
+
+  <div class="container-fluid bg-info" style="margin-bottom: 5px;">
+    <h1>Game Showcase for 2023</h1>
+    <h8>They may not be <i>from</i> 2023, but they are just as good.</h8>
+  </div>
+
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel">
+                        What is 'Voting Time'?
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>From the selection displayed in the carousel and accordian before this, tweet your choice to #gamesoftheyear2024 ! If you aren't in the know for our other activities, including movies and television, enter your email below to get added to our mailing list.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: red">
+          Ib
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Opening Screen Art">
+          <img
+          class="card-img"
+          src="images/ib.jpg"
+          alt="Ib Promotional Art"
+        />
+        </span>
+        <div class="card-body">
+          <p class="card-text">
+            A young girl gets lost in an art museum as the exhibits begin to chase her and other guests.
+          </p>
+        </div>
+      </div>
+    
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: orangered">
+          Jazzpunk
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Promotional Screenshot">
+        <img
+          class="card-img"
+          src="images/jazzpunk.jpg"
+          alt="Jazzpunk Title"
+        />
+        </span>
+        <div class="card-body">
+          <p class="card-text">
+            In an alternate earth, a secret agent completes inane missions in strange and quirky locations in this super spy/surreal program.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: lightblue">
+          Kuukiyomi: Consider It
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="App Logo">
+        <img
+          class="card-img"
+          src="images/kuukiyomi.jpg"
+          alt="Promotional Art for Kuukiyomi 1"
+        />
+       </span>
+        <div class="card-body">
+          <p class="card-text">
+            Are you considerate? This abstract japanese game puts you in more than 100 situations where you have a limited to be or not be considerate.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: gray">
+          The Magic Circle
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Start Screen & Logo">
+        <img
+          class="card-img"
+          src="images/magiccircle.jpg"
+          alt="Logo for The Magic Circle"
+        />
+        </span>
+        <div class="card-body">
+          <p class="card-text">
+            An old AI helps as a beta tester explores and improves the wasteland of an open-world fantasy game trapped in development hell.
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: lightsalmon">
+          Monument Valley
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="App Logo">
+        <img
+          class="card-img"
+          src="images/mvalley.jpg"
+          alt="Ida, the Cursed Princess"
+        />
+        </span>
+        <div class="card-body">
+          <p class="card-text">
+            A cursed princess ventures through non-euclidean monuments in order to restore a fallen kingdom. 
+          </p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 200px; border: 3px solid black; margin: 10px;">
+        <div class="card-header" style="background-color: lightgreen">
+          We Were Here
+        </div>
+        <span data-bs-toggle="tooltip" data-bs-placement="top" title="Title Animation">
+        <img
+          class="card-img"
+          src="images/wewerehere.gif"
+          alt="Opening WWH Title"
+        />
+        </span>
+        <div class="card-body">
+          <p class="card-text">
+            Two ice climbers trapped in a blizzard find refuge in a strange medeival facility, and must communicate to help one another through various trials that they each have the answers for. 
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <h4 style="text-align: center;">--- Voting Time! ---</h4>
+      <div class="col col-sm-10 col-md-4 carousel-area" style="background-color: antiquewhite;">
+
+        <div id="course_carousel" class="carousel carousel-light" data-bs-ride="carousel" data-bs-interval="2000">
+
+          <div class="carousel-indicators">
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="2"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="3"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="4"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="5"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="6"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="7"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#course-carousel"
+              data-bs-slide-to="8"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="images/akamanto.jpg"
+                alt="Aka Manto"
+              />
+              <div class="carousel-caption">
+              <h2>Aka Manto</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/anemoiapolis.jpg"
+                alt="Anemoiapolis"
+              />
+              <div class="carousel-caption">
+              <h2>Anemoiapolis</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/burgers-and-frights-game.jpg"
+                alt="Burgers&Frights"
+              />
+              <div class="carousel-caption">
+              <h2>Burgers and Frights</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/chromasquad.jpg"
+                alt="Chroma Squad"
+              />
+              <div class="carousel-caption">
+              <h2>Chroma Squad</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/glassstaircase.jpg"
+                alt="TheGlassStaircase"
+              />
+              <div class="carousel-caption">
+              <h2>The Glass Staircase</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/hornsoffear.webp"
+                alt="Horns of Fear"
+              />
+              <div class="carousel-caption">
+              <h2>Horns of Fear</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/inscryption_board.jpg"
+                alt="Inscryption"
+              />
+              <div class="carousel-caption">
+              <h2>Inscryption</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/puppetshow.png"
+                alt="PuppetShow"
+              />
+              <div class="carousel-caption">
+              <h2>PuppetShow</h2>
+            </div>
+            </div>
+
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="images/the-blackout-club-pc-cd-key-2.jpg"
+                alt="BlackoutClub"
+              />
+              <div class="carousel-caption">
+              <h2>The Blackout Club</h2>
+            </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#course_carousel"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true">
+              </span>
+              <span
+              class="visually-hidden">
+                Previous
+              </span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#course_carousel"
+              data-bs-slide="next"
+            >
+              <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col col-sm-12 col-lg-4 accordion-area" style="background-color: antiquewhite;">
+
+        <div class="accordion" id="accordionItems">
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header" id="headingOne">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne">
+                  Aka Manto (Chilla's Art)
+              </button>
+
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse "
+                aria-labelledby="Aka Manto"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>A young girl is bullied into visiting an old schoolhouse after hours, but finds out she is trapped after an ancient bathroom spirit begins to hunt her.</p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo">
+                  Anemoiapolis (Andrew Quist)
+              </button>
+
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="Anemoiapolis"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>A land surveyor investigates a strange usage of power for a city that was never built, but instead falls into a surreal and somewhat haunted underground neighborhood.</p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseThree">
+                  Burgers and Frights (Donitz)
+              </button>
+
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="Burgers&Frights"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>It's late. You've just left your evening shift. You get on your bike and begin heading home. No matter how many times you have to do it, you'll get home eventually. </p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseFour">
+                  Chroma Squad (Behold Studios)
+              </button>
+
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="ChromaSquad"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>Five stunt actors leave a passionless job after many projects, and create both their own studio and television show: Chroma Squad! With special effects and strategy RPG, work with this team of five to make the most successful tokusatsu.</p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="true"
+                aria-controls="collapseFive">
+                  The Glass Staircase (Puppet Combo)
+              </button>
+
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="GlassStaircase"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>Inspired by Italian horror films, a group of girls hope to one day leave the girl's home they've been sent to by their parents. Strange things happen to each girl as they are given chores by the intercom. </p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="true"
+                aria-controls="collapseSix">
+                  Horns of Fear (Pixoala)
+              </button>
+
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="HornsofFear"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>In a world fraught with drugs and crime, a journalist with a pension for the paranormal is invited to a mansion full of strange phenomena to investigate. </p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="true"
+                aria-controls="collapseSeven">
+                  Inscryption (Daniel Mullins Games)
+              </button>
+
+              <div
+                id="collapseSeven"
+                class="accordion-collapse collapse"
+                aria-labelledby="Inscryption"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>A card game enthusiast plays a video game he found in the woods, against four opposing card game masters in a strange unnatural world.</p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="true"
+                aria-controls="collapseEight">
+                  PuppetShow (Big Fish)
+              </button>
+
+              <div
+                id="collapseEight"
+                class="accordion-collapse collapse"
+                aria-labelledby="PuppetShow"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>A hidden object game with a surprisingly riveting plot. A detective is called to a once-bustling town where people have been going missing. </p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="true"
+                aria-controls="collapseNine">
+                  The Blackout Club (Question)
+              </button>
+
+              <div
+                id="collapseNine"
+                class="accordion-collapse collapse"
+                aria-labelledby="BlackoutClub"
+                data-bs-parent="#accordionItems">
+                <div class="accordion-body">
+                  <p>A group of teenagers who live in a radio silent zone team up to investigate strange happenings after their parents begin acting strange at night.</p>
+                </div>
+              </div>
+
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col col-sm-12 col-lg-4 button-container">
+
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#helpModal" style="text-align: center; margin-left: 24px">
+          <i class="bi bi-patch-question" style="margin: 50px;"></i> What is 'Voting'? <i class="bi bi-patch-question" style="margin: 50px;"></i>
+        </button>
+
+        <form>
+          <label for="e-mail" class="form-label">New here? Sign-Up with your E-Mail Address here!</label>
+          <div class="mb-4 input-group">
+              <span class="input-group-text">
+                  <i class="bi bi-envelope-fill"></i>
+              </span>
+              <input type="email" class="form-control" id="email" placeholder="yourchoiceemail@mailin.com"/>
+              <span class="input-group-text text-muted"  data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your e-mail here!">
+                  <i class="bi bi-question-circle"></i>
+              </span>
+          </div>
+      </form>
+
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
